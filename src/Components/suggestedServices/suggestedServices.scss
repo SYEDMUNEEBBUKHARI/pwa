@@ -1,0 +1,94 @@
+.service-head{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.services-showcase{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 6px 8px rgba(0,0,0,0.11),
+    0 8px 16px rgba(0,0,0,0.11);
+    padding: 14px 0;
+    border-radius: 5px;
+
+    div{
+        background: white !important;
+        outline: none !important;
+    }
+
+    
+    .service-grid{
+        display: inline-block;
+        text-align: center;
+        width: 25%;
+    }
+
+    .service-grid-bottom{
+        display: inline-block;
+        text-align: center;
+        width: 25%;
+        margin: 0 0 0 10px;
+    }
+
+    .service-grid-bottom:nth-child(1){
+        margin: 0 0 0 20px;
+    }
+
+        
+    .cleaner{
+        width: 40%;
+    }
+    .carwash{
+        width: 75%;
+    }
+    .plumber{
+        width: 45%;
+    }
+    .electric{
+        width: 35%;
+    }
+    .carpenter{
+        width: 50%;
+    }
+    .handyman{
+        width: 40%;
+    }
+    .acservice{
+        width: 60%;
+    }
+}
+//end
+
+
+
+//Suggested services section
+.suggested-service{
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 17px;
+    }
+  
+.services-we-provide{
+    .service-suggested-grid{
+        display: inline-block;
+        text-align: center;
+        width: 45%;
+        margin-left: 11px;
+
+        img{
+            width: 100%;
+            height: 96px;
+            border-radius: 5px;
+        }
+    }
+}
+}
+
+.suggested-service-title{
+    font-size: 15px;
+    font-weight: 700;
+}

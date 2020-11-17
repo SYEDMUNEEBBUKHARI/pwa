@@ -36,26 +36,18 @@ font-weight: 650;
 
 }
 }
-a:hover{
-    font-weight: 300;
+
+   
+
+    .active:hover{ 
+        font-weight: 300;
  
-    padding-bottom: 5px;
-    position: relative;
-    cursor: pointer;
-    
-}
-a:hover::before {
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 1px;
-    bottom: 0;
-   left:25%;
-    border-bottom: 2px solid red;
+        padding-bottom: 5px;
+        position: relative;
+        cursor: pointer;
     }
     .active::before{
         content: "";
-        position: absolute;
         width: 50%;
         height: 1px;
         bottom: 0;
@@ -71,6 +63,5 @@ a:hover::before {
     width: 0px;
     background: transparent;
 }
-
 
 
