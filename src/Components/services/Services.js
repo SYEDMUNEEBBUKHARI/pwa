@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useEffect} from 'react';
 import "./services.scss";
 import Logo from "../../Assets/images/logo.png";
 import SuggestedServices from "../suggestedServices/SuggestedServices";
@@ -111,7 +111,6 @@ function Services(props) {
         const serviceSelectionHandler=(e)=>{
 
             var header = document.getElementById(e.target.id);
-console.log("tarfget",e.target.id)
                 switch(e.target.id)
                 {
                   case 'cleaning':
@@ -139,12 +138,14 @@ console.log("tarfget",e.target.id)
                     handelActiveClasses(e.target.id,header);
                     setServiceComp(<SuggestedServices cleaningServiceList={cleaningServicesGroup} />);
                   break;
+                  default:
+                    break;
 
                 }
   
 
             }
-
+            
             const handelActiveClasses=(data,header)=>{
               const DataArr=['cleaning','plumber','electrician','handyman','carwash','acservices'];
               var checkone=document.getElementById(data);
@@ -152,9 +153,8 @@ console.log("tarfget",e.target.id)
                  for(var i=0; i<6; i++)
                  {
          
-                   if(DataArr[i] != data){
+                   if(DataArr[i] !== data){
                      var check=document.getElementById(DataArr[i]);
-                     console.log("error",check)
                      if (check.classList.contains("active")) {
                      check.classList.remove("active");
                      }
@@ -174,11 +174,12 @@ console.log("tarfget",e.target.id)
             <div className="container ">
               <div className="scrollmenu" id="scroll-nav">
                   {
-                    servicesGroup.map((data,key)=>{
-                      
-                          return <a  onClick={(e)=>{serviceSelectionHandler(e)}} key={key} id={data.id} className={(data.id==="cleaning")?`${data.id} active`:`${data.id}`}>{data.label}</a>
-                    
-                    })
+                    servicesGroup.map((data,key) => (
+                      <a className={data.id==="cleaning"?"active":""}  onClick={(e)=>{serviceSelectionHandler(e)}}
+                        key={key} id={data.id}>
+                        {data.label}
+                      </a>
+                    ))
                   }
                 </div>
 

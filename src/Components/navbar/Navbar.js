@@ -1,29 +1,45 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import "./navbar.scss";
 import {HiOutlineHome} from "react-icons/hi";
 import {BsTools} from "react-icons/bs"
 import {RiPagesFill} from 'react-icons/ri';
-import {BiUser} from "react-icons/bi"
+import {BiUser} from "react-icons/bi";
+
+
 function Navbar(){
+
+useEffect(()=>{
+  var pathname = window.location.pathname;
+  const splitPath=pathname.split("/");
+  const splitStr=splitPath[1].trim();
+  document.getElementById(splitStr).classList.add("active-nav")
+})
+
+
+  const handelTheNavClick=(data)=>{
+        window.location.href=`/${data}`;     
+ }
+   
+   
     return(
     <>
-    <div className="navigationbar">
-        <div>
-        <div className="text-center">
+    <div className="navigationbar"  >
+        <div className="nav-item " id="home" onClick={(e)=>{handelTheNavClick(e.currentTarget.id)}}>
+        <div className="text-center" >
               <HiOutlineHome className="nav-icon" /></div>
             HOME
         </div>
-        <div>
+        <div className="nav-item" id="services" onClick={(e)=>{handelTheNavClick(e.currentTarget.id)}}>
         <div className="text-center">
               <BsTools className="nav-icon" /></div>
             SERVICES
         </div>
-        <div>
+        <div className="nav-item" id="order" onClick={(e)=>{handelTheNavClick(e.currentTarget.id)}}>
         <div className="text-center">
               <RiPagesFill className="nav-icon" /></div>
             ORDERS
         </div>
-        <div>
+        <div className="nav-item" id="profile" onClick={(e)=>{handelTheNavClick(e.currentTarget.id)}}>
         <div className="text-center">
               <BiUser className="nav-icon" /></div>
             PROFILE

@@ -1,0 +1,49 @@
+.one-call-head{
+    background-color: #0c2340;
+    h6{
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .mahir-bottom-icon{
+        width: 30%;
+    }
+
+    .right-socials-bottom{
+        color: white;
+        font-size: 22px;
+        float: right;
+    }
+
+    .linkedin{
+        border-radius: 50%;
+        color: black;
+        padding: 3px 0;
+        background: white;
+        
+    }
+
+    .services-selection{
+        select{
+            width: 80%;
+            background-color: #0c2340;
+            color: white;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        h6{
+            color: white;
+            font-size: 12px;
+        }
+    }
+
+
+
+}

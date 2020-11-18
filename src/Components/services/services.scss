@@ -12,8 +12,10 @@
 div.scrollmenu {
     overflow: auto;
     white-space: nowrap;
+    color: rgb(218, 218, 218);
+
   }
-  
+
   div.scrollmenu{
        a {
     display: inline-block;
@@ -26,42 +28,48 @@ div.scrollmenu {
 
   }
 }
+div.scrollmenu{
+    a.active {
+ display: inline-block;
+ color: rgb(0, 0, 0);
+ text-align: center;
+ padding: 14px 14px 2px 14px;
+ text-decoration: none;
+ font-size: 15px;
+ font-weight: 650;
+
+}
+}
+
   
-  div.scrollmenu 
-  {
-      a:hover {
-color: black;  
-font-size: 15px;
-font-weight: 650;
+a.active{
+    font-weight: 300;
+
+    padding-bottom: 5px;
+    position: relative;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 650;
+    
 
 }
-}
-
-   
-
-    .active:hover{ 
-        font-weight: 300;
- 
-        padding-bottom: 5px;
-        position: relative;
-        cursor: pointer;
+a.active::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+   left:25%;
+    border-bottom: 2px solid red;
     }
-    .active::before{
-        content: "";
-        width: 50%;
-        height: 1px;
-        bottom: 0;
-       left:25%;
-        border-bottom: 2px solid red;
-    }
+    
 
-    
-    
+
+
  /* make scrollbar transparent */
- 
+
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
 }
-
-

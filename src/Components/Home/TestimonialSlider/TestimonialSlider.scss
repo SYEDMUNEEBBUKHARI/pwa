@@ -1,0 +1,43 @@
+//Testimonial slider section
+.testimonial-head{
+    .carousel-control-next, .carousel-control-prev{
+        display: none !important;
+    }
+    h3{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .testimonial-inner{
+        height: auto;
+
+        .star{
+            color:red;
+            font-size: 25px;
+        }
+        .half-star{
+            color:red;
+            font-size: 21px;
+        }
+
+        .testimonial-icons{
+            width: 20%;
+        }
+
+        p{
+            font-weight: 600;
+        }
+
+      
+    }
+
+    .carousel-indicators{
+        display: none;
+    }
+
+    .testimonial-top{
+        margin-bottom: 40px;
+        border: none;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+}

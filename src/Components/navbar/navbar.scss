@@ -4,9 +4,23 @@
   font-size: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
+  position:fixed;
+ 
+  bottom:0;
+  width:100%;
+  background-color: rgb(255, 255, 255);
 
    
 }
 .nav-icon{
     font-size: 22px;
+}
+.nav-item{
+  color: black;
+}
+.active-nav{
+  color:red;
+}
+.nav-item.active-nav{
+  color:red;
 }

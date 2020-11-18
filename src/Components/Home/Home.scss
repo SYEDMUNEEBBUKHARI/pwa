@@ -1,0 +1,46 @@
+body{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+
+
+//background banner section
+.background-banner{
+    background-image: url("../../Assets/images/dummy.png");
+    height:500px;
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    margin-bottom: -236px;
+
+
+    .webicon{
+        position: relative;
+        top:0px;
+
+        .site-logo{
+            width: 20%;
+        }
+
+        
+        .right-searching{
+            // margin: 14px 15px 0 0;
+            float: right;
+            padding: 20px 20px;
+            color: #ffffff;
+            background-color: #c51017;
+            border-radius: 5px;
+            height: 12px;
+            width: 3%;
+
+            svg{
+                font-size: 25px;
+                position: absolute;
+                top: 25px;
+                right: 23px;
+            }
+        }
+    }
+}
+// end

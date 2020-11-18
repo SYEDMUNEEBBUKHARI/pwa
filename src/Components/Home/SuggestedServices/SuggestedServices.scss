@@ -1,0 +1,26 @@
+//Suggested services section
+.suggested-service{
+    h3{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+  
+.services-we-provide{
+    .service-suggested-grid{
+        display: inline-block;
+        text-align: center;
+        width: 45%;
+        margin-left: 11px;
+
+        img{
+            width: 100%;
+            height: 96px;
+            border-radius: 5px;
+        }
+    }
+    p{
+        font-weight: bold;
+    }
+}
+}
+//end

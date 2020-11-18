@@ -7,7 +7,7 @@ import Servicesuccess from "../../Assets/images/successrating.jpg";
 import {HiOutlineHome} from "react-icons/hi"
  function serviceRating(){
 return(
-    <>
+    <div className="service-rating-component">
     <div>
         <h5 className="text-center service-rating-title"><b>SERVICE RATING</b></h5>
     </div>
@@ -36,7 +36,7 @@ return(
             </Row>
   </Container>
     </div>
-    </>
+    </div>
 );
 }
 

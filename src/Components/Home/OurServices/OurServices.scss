@@ -1,0 +1,82 @@
+
+// our services section
+.service-head{
+    h3{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+.services-showcase{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 6px 8px rgba(0,0,0,0.11),
+    0 8px 16px rgba(0,0,0,0.11);
+    border-radius: 5px;
+    // margin: 0 10px 0 10px;
+
+    div{
+        background: white !important;
+        outline: none !important;
+    }
+
+    
+    .service-grid{
+        display: inline-block;
+        text-align: center;
+        width: 25%;
+
+        p{
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
+    .service-grid:nth-child(2){
+        margin-top: 8px;
+    }
+
+    .service-grid-bottom{
+        display: inline-block;
+        text-align: center;
+        width: 25%;
+        margin: 0 0 0 10px;
+
+        p{
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
+    .service-grid-bottom:nth-child(1){
+        margin: 0 0 0 28px;
+    }
+
+    .service-grid-bottom:nth-child(2){
+        margin-top: -9px;
+    }
+        
+    .cleaner{
+        width: 40%;
+    }
+    .carwash{
+        width: 87%;
+    }
+    .plumber{
+        width: 47%;
+    }
+    .electric{
+        width: 35%;
+    }
+    .carpenter{
+        width: 50%;
+    }
+    .handyman{
+        width: 40%;
+    }
+    .acservice{
+        width: 60%;
+    }
+}
+//end
