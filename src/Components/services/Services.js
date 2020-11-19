@@ -4,6 +4,7 @@ import Logo from "../../Assets/images/logo.png";
 import SuggestedServices from "../suggestedServices/SuggestedServices";
 import ServiceRating from "../servicesRating/serviceRating";
 
+
 let servicesGroup=[
     {
   id:'cleaning',
@@ -101,7 +102,6 @@ let electricianServicesGroup=[
 ];
 
 function Services(props) {
-  
 
   const [serviceComp, setServiceComp] = React.useState(<SuggestedServices cleaningServiceList={cleaningServicesGroup} />);
   useEffect(() => {

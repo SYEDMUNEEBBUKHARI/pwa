@@ -10,6 +10,11 @@ function Navbar(){
 
 useEffect(()=>{
   var pathname = window.location.pathname;
+
+  if(pathname==="/")
+  {
+    pathname=pathname+'home'
+  }
   const splitPath=pathname.split("/");
   const splitStr=splitPath[1].trim();
   document.getElementById(splitStr).classList.add("active-nav")

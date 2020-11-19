@@ -6,9 +6,9 @@ import Webicon from "../../Assets/images/webicon.png";
 import OurServices from "../Home/OurServices/OurServices"
 
 function Home(){
-    let history = useHistory();
+
     useEffect(()=>{
-        history.push('/home')
+
     })
     return(
     <>
