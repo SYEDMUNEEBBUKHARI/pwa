@@ -1,12 +1,17 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { BsSearch } from "react-icons/bs";
 import "./Home.scss";
+import {useHistory} from 'react-router-dom';
 import Webicon from "../../Assets/images/webicon.png";
 import OurServices from "../Home/OurServices/OurServices"
 
 function Home(){
+    let history = useHistory();
+    useEffect(()=>{
+        history.push('/home')
+    })
     return(
-    <React.Fragment>
+    <>
         <div className="background-banner">
             <div className="webicon">
                 <img className="img-fluid site-logo" alt="mr mahir icon" src={Webicon} />    
@@ -18,7 +23,7 @@ function Home(){
         </div>
         <OurServices />
 
-    </React.Fragment>
+    </>
     
 )}
 
