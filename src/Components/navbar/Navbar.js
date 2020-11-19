@@ -39,7 +39,7 @@ useEffect(()=>{
               <BsTools className="nav-icon" /></div>
             SERVICES
         </div>
-        <div className="nav-item" id="order" onClick={(e)=>{handelTheNavClick(e.currentTarget.id)}}>
+        <div className="nav-item" id="orders" onClick={(e)=>{handelTheNavClick(e.currentTarget.id)}}>
         <div className="text-center">
               <RiPagesFill className="nav-icon" /></div>
             ORDERS

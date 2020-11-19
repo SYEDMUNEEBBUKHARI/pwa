@@ -1,0 +1,89 @@
+.orders-head{
+    .last-card{
+        margin-bottom: 30px;
+    }
+
+    .background-color{
+        background-color: whitesmoke;
+        border: none;
+        height: 150px;
+    }
+    .order-top-img{
+        .site-logo{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+   h4{
+       text-transform: uppercase;
+       font-weight: bold;
+   }
+   .about-left{
+       height: 140px;
+       border-radius: 20px;
+       position: absolute;
+       width: 30%;
+   }
+
+  .inner-media{
+    position: relative;
+    right: -97px;
+    top: -12px;
+    font-size: 12px;
+    width: 75%;
+
+
+    .main-top-text{
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .bottom-text{
+        font-size: 12px;
+    }
+    .description-media{
+        margin-bottom: 9px;
+    }
+
+    .date-orders{
+        float: right;
+        position: relative;
+        top: -19px;
+        left: -10px;
+        font-size: 8px;
+    }
+  }
+
+  .status-btn{
+      background-color: #670c67;
+      color: white;
+      border: none;
+      height: 20px;
+      font-size: 12px;
+      padding: 0px 12px;
+      border-radius: 3px;
+
+      &:focus{
+          outline: none;
+      }
+  }
+
+  .cancel-btn{
+    background-color: #ed1b24;
+      float: right;
+      color: white;
+      border: none;
+      height: 20px;
+      font-size: 12px;
+      padding: 0px 12px;
+      border-radius: 3px;
+      margin: 0 10px;
+
+      &:focus{
+        outline: none;
+    }
+  }
+    
+}
+
+

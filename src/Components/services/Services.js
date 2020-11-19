@@ -113,9 +113,13 @@ function Services(props) {
 
     const openModel=()=>{
       console.log("clicked");
-    setModal(<BookModal flag="true" />);
+    setModal(<BookModal flag={true} close={()=>{closeModal()}} />);
     }
-    
+
+    const closeModal=()=>{
+      setModal(' ');
+    }
+
       const serviceSelectionHandler=(e)=>{
 
             var header = document.getElementById(e.target.id);
