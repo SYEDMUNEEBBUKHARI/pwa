@@ -5,21 +5,19 @@ import {RiStarSFill} from "react-icons/ri";
 import {RiStarHalfFill} from "react-icons/ri" 
 import Servicesuccess from "../../Assets/images/successrating.jpg";
 import {HiOutlineHome} from "react-icons/hi";
-import BookModal from "./Bookingmodal/BookModal";
- function ServiceRating(){
+ function ServiceRating(props){
 
-    const [modal,setModal]=useState(false);
-    const openModel=()=>{
-        console.log("clicked");
-    setModal(true);
-    }
+    const openBookForm=()=>{
+props.popmodal();
+}
+   
 return(
     <div className="service-rating-component">
+
     <div>
         <h5 className="text-center service-rating-title"><b>SERVICE RATING</b></h5>
     </div>
     <div className="service-rating">
-    {console.log("setModal",setModal)}
 
     <Container>
             <Row className="justify-content-md-center">
@@ -36,7 +34,7 @@ return(
                     <h5><b>4.7/5</b></h5 >
                    based on 195 Tags
                 </div>
-                <button className="book" onClick={()=>openModel()}>Book Now</button>
+                <button className="book" onClick={()=>openBookForm()}>Book Now</button>
                 </Col>
             
                 <Col lg xs="6">

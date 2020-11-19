@@ -1,14 +1,37 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "./bookmodal.scss";
+import {Modal} from 'react-bootstrap';
+import MultiStep from "../multistepform/main";
+function BookModal(props){
+    const [lgShow, setLgShow] = useState(props.flag);
+   
 
-function BookModal(){
+    useEffect(()=>{
+     console.log("flag",lgShow);
+    })
+    const hideModal=()=>{
+        setLgShow(false);
+    }
 return(
 <>
+      
+      <Modal
+        size="lg"
+        show={lgShow}
+        onHide={() => hideModal()}
+        aria-labelledby="example-modal-sizes-title-lg"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="example-modal-sizes-title-lg">
 
-<h1 style={{backgroundColor:'white',height:'900px',width:'500px',zIndex:'900'}}>BookModal</h1>
+            <MultiStep />
 
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>...</Modal.Body>
+      </Modal>
 
-</>
+    </>
 );
 
 }

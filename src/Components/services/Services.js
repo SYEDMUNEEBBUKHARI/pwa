@@ -1,8 +1,9 @@
-import React,{useEffect} from 'react';
+import React,{useEffect,useState} from 'react';
 import "./services.scss";
 import Logo from "../../Assets/images/logo.png";
 import SuggestedServices from "../suggestedServices/SuggestedServices";
 import ServiceRating from "../servicesRating/serviceRating";
+import BookModal from "../servicesRating/Bookingmodal/BookModal";
 
 
 let servicesGroup=[
@@ -103,12 +104,19 @@ let electricianServicesGroup=[
 
 function Services(props) {
 
-  const [serviceComp, setServiceComp] = React.useState(<SuggestedServices cleaningServiceList={cleaningServicesGroup} />);
+  const [serviceComp, setServiceComp] = useState(<SuggestedServices cleaningServiceList={cleaningServicesGroup} />);
   useEffect(() => {
+
     });
+    const [pop,setModal]=useState("");
 
 
-        const serviceSelectionHandler=(e)=>{
+    const openModel=()=>{
+      console.log("clicked");
+    setModal(<BookModal flag="true" />);
+    }
+    
+      const serviceSelectionHandler=(e)=>{
 
             var header = document.getElementById(e.target.id);
                 switch(e.target.id)
@@ -168,11 +176,14 @@ function Services(props) {
   
     return(
         <>
+              {pop}
+
             <div className="services">
             <img className="site-logo" src={Logo} alt=" disappear"/>
             </div>
             <div className="container ">
               <div className="scrollmenu" id="scroll-nav">
+
                   {
                     servicesGroup.map((data,key) => (
                       <a className={data.id==="cleaning"?"active":""}  onClick={(e)=>{serviceSelectionHandler(e)}}
@@ -186,7 +197,7 @@ function Services(props) {
               </div> 
 
          {serviceComp}
-         <ServiceRating />
+         <ServiceRating  popmodal={()=>{openModel()}}/>
         </>
     );
 }
