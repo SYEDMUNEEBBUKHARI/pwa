@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import {  Route, Switch } from "react-router-dom";
 import Services from './Components/services/Services';
 import './App.scss'; 
 import NavigationBar from "./Components/navbar/Navbar";
@@ -9,11 +9,11 @@ import Profile from "./Components/Profile/Profile";
 
 
 
-function App() {
+function App(props) {
  
   return (
   <> 
-    <BrowserRouter>
+   
     <Switch>
       <Route exact path="/"  component={Home} />
       <Route path="/services" component={Services} />
@@ -22,9 +22,9 @@ function App() {
       <Route  component={Home} />
 
     </Switch>
-    <NavigationBar />
+    <NavigationBar history={props.history}/>
 
-  </BrowserRouter>
+ 
 
   </>);
 }

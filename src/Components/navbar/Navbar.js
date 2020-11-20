@@ -5,8 +5,7 @@ import {BsTools} from "react-icons/bs"
 import {RiPagesFill} from 'react-icons/ri';
 import {BiUser} from "react-icons/bi";
 
-
-function Navbar(){
+function Navbar(props){
 
 useEffect(()=>{
   var pathname = window.location.pathname;
@@ -17,8 +16,16 @@ useEffect(()=>{
   }
   const splitPath=pathname.split("/");
   const splitStr=splitPath[1].trim();
-  document.getElementById(splitStr).classList.add("active-nav")
-})
+
+  let listContainer= document.getElementById(splitStr);
+  if(listContainer)
+  {
+    listContainer.classList.add("active-nav");
+  }
+  else{
+    document.getElementById('home').classList.add("active-nav");
+  }
+  })
 
 
   const handelTheNavClick=(data)=>{
@@ -28,6 +35,7 @@ useEffect(()=>{
    
     return(
     <>
+    
     <div className="navigationbar"  >
         <div className="nav-item " id="home" onClick={(e)=>{handelTheNavClick(e.currentTarget.id)}}>
         <div className="text-center" >
