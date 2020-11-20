@@ -5,7 +5,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   position:fixed;
- 
+ z-index:1000;
   bottom:0;
   width:100%;
   background-color: rgb(255, 255, 255);
@@ -15,12 +15,29 @@
 .nav-icon{
     font-size: 22px;
 }
-.nav-item{
-  color: black;
+
+a.activee::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  border-bottom: 2px solid red;
 }
-.active-nav{
-  color:red;
+.nav-links{
+  color:rgb(0, 0, 0);
 }
-.nav-item.active-nav{
-  color:red;
+.nav-links:active{
+  color:rgb(255, 0, 0);
+  text-decoration: none;
+}
+.nav-links:hover{
+  color:rgb(255, 0, 0);
+  text-decoration: none;
+
+}
+.makeactive{
+  color:rgb(255, 0, 0);
+  text-decoration: none;
 }

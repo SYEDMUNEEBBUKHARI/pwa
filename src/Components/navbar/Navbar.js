@@ -1,62 +1,45 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import "./navbar.scss";
 import {HiOutlineHome} from "react-icons/hi";
 import {BsTools} from "react-icons/bs"
 import {RiPagesFill} from 'react-icons/ri';
 import {BiUser} from "react-icons/bi";
+import {NavLink} from 'react-router-dom'
 
-function Navbar(props){
+function Navbar(){
 
-useEffect(()=>{
-  var pathname = window.location.pathname;
-
-  if(pathname==="/")
-  {
-    pathname=pathname+'home'
-  }
-  const splitPath=pathname.split("/");
-  const splitStr=splitPath[1].trim();
-
-  let listContainer= document.getElementById(splitStr);
-  if(listContainer)
-  {
-    listContainer.classList.add("active-nav");
-  }
-  else{
-    document.getElementById('home').classList.add("active-nav");
-  }
-  })
-
-
-  const handelTheNavClick=(data)=>{
-        window.location.href=`/${data}`;     
- }
    
    
     return(
     <>
     
     <div className="navigationbar"  >
-        <div className="nav-item " id="home" onClick={(e)=>{handelTheNavClick(e.currentTarget.id)}}>
-        <div className="text-center" >
-              <HiOutlineHome className="nav-icon" /></div>
-            HOME
+    <NavLink to="/" exact className="text-center nav-links" activeClassName="nav-links">
+    <div className="">
+              <HiOutlineHome className="nav-icon" />
+           <div> HOME</div>
         </div>
-        <div className="nav-item" id="services" onClick={(e)=>{handelTheNavClick(e.currentTarget.id)}}>
-        <div className="text-center">
-              <BsTools className="nav-icon" /></div>
-            SERVICES
+    </NavLink>
+    <NavLink to="/services" exact className="text-center nav-links" activeClassName="nav-links">
+    <div className="">
+              <BsTools className="nav-icon" />
+              <div>  SERVICES</div>
         </div>
-        <div className="nav-item" id="orders" onClick={(e)=>{handelTheNavClick(e.currentTarget.id)}}>
-        <div className="text-center">
-              <RiPagesFill className="nav-icon" /></div>
-            ORDERS
+    </NavLink>
+    <NavLink to="/orders" exact className="text-center nav-links" activeClassName="nav-links">
+    <div className="">
+    <RiPagesFill className="nav-icon" />
+              <div> ORDERS</div>
         </div>
-        <div className="nav-item" id="profile" onClick={(e)=>{handelTheNavClick(e.currentTarget.id)}}>
-        <div className="text-center">
-              <BiUser className="nav-icon" /></div>
-            PROFILE
+    </NavLink>
+    <NavLink to="/profile" exact className="text-center nav-links" activeClassName="nav-links">
+    <div className="">
+              <BiUser className="nav-icon" />
+              <div> PROFILE</div>
         </div>
+    </NavLink>
+    
+        
 
     </div>
     

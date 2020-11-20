@@ -29,7 +29,7 @@ div.scrollmenu {
   }
 }
 div.scrollmenu{
-    a.active {
+    a.active-service {
  display: inline-block;
  color: rgb(0, 0, 0);
  text-align: center;
@@ -42,7 +42,7 @@ div.scrollmenu{
 }
 
   
-a.active{
+a.active-service{
     font-weight: 300;
 
     padding-bottom: 5px;
@@ -54,7 +54,7 @@ a.active{
     
 
 }
-a.active::before {
+a.active-service::before {
     content: "";
     position: absolute;
     width: 50%;

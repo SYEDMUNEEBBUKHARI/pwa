@@ -1,14 +1,12 @@
-import React,{useEffect} from "react";
+import React from "react";
 import { BsSearch } from "react-icons/bs";
 import "./Home.scss";
 import Webicon from "../../Assets/images/webicon.png";
-import OurServices from "../Home/OurServices/OurServices"
+import OurServices from "../Home/OurServices/OurServices";
 
-function Home(){
+function Home(props){
 
-    useEffect(()=>{
-
-    })
+  
     return(
     <>
         <div className="background-banner">
@@ -20,7 +18,7 @@ function Home(){
             </div>
 
         </div>
-        <OurServices />
+        <OurServices  />
 
     </>
     

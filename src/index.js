@@ -5,16 +5,9 @@ import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Router} from "react-router-dom";
-import history from "./history";
 
 ReactDOM.render(
-  <>
-  <Router history={history}>
-    <App />
-    
-  </Router>
-  </>,
+  <App />,
   document.getElementById('root')
 );
 

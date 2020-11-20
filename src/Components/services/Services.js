@@ -161,14 +161,14 @@ function Services(props) {
             const handelActiveClasses=(data,header)=>{
               const DataArr=['cleaning','plumber','electrician','handyman','carwash','acservices'];
               var checkone=document.getElementById(data);
-              checkone.classList.add("active");
+              checkone.classList.add("active-service");
                  for(var i=0; i<6; i++)
                  {
          
                    if(DataArr[i] !== data){
                      var check=document.getElementById(DataArr[i]);
-                     if (check.classList.contains("active")) {
-                     check.classList.remove("active");
+                     if (check.classList.contains("active-service")) {
+                     check.classList.remove("active-service");
                      }
                    }
                   
@@ -190,7 +190,7 @@ function Services(props) {
 
                   {
                     servicesGroup.map((data,key) => (
-                      <a className={data.id==="cleaning"?"active":""}  onClick={(e)=>{serviceSelectionHandler(e)}}
+                      <a className={data.id==="cleaning"?"active-service":""}  onClick={(e)=>{serviceSelectionHandler(e)}}
                         key={key} id={data.id}>
                         {data.label}
                       </a>
