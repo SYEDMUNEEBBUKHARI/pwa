@@ -3,7 +3,8 @@ import { BsSearch } from "react-icons/bs";
 import "./Home.scss";
 import {useHistory} from 'react-router-dom';
 import Webicon from "../../Assets/images/webicon.png";
-import OurServices from "../Home/OurServices/OurServices"
+import OurServices from "../Home/OurServices/OurServices";
+
 
 function Home(){
 

@@ -86,9 +86,6 @@ let previousOrders=[
 
 
 function orders(){
-    
-
-
     return(
         <React.Fragment>
             <div className="orders-head">

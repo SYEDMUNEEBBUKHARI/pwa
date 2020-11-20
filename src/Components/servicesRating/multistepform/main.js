@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import Webicon from "../../../Assets/images/webicon.png";
+
 
 import MultiStep from 'react-multistep'
 
@@ -18,9 +20,13 @@ const steps = [
 const prevStyle = {'background': '#33c3f0', 'borderWidth': '2px'}
 const nextStyle = {'background': '#33c3f0',  'borderWidth': '2px'}
 
+
+
 const MultiStepForm = () => (
   <div className='container'>
-    
+    <div className="order-top-img">
+            <img className="img-fluid site-logo" src={Webicon} alt="order-logo" />
+        </div>
     <MultiStep steps={steps} prevStyle={prevStyle} nextStyle={nextStyle}/>
     
   </div>

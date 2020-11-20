@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+
 
 export default () => {
   const [firstName, setFirstName] = useState('')
@@ -6,12 +7,11 @@ export default () => {
 
   return (
     <div>
-      <div className='row'>
+      <div className='row mb-5'>
         <div className='six columns'>
-          <label>First Name</label>
           <input
             className='u-full-width'
-            placeholder='First Name'
+            placeholder='Service'
             type='text'
             onChange={e => setFirstName(e.target.value)}
             value={firstName}
@@ -19,12 +19,24 @@ export default () => {
           />
         </div>
       </div>
-      <div className='row'>
+
+      <div className='row mb-5'>
         <div className='six columns'>
-          <label>Last Name</label>
           <input
             className='u-full-width'
-            placeholder='Last Name'
+            placeholder='Subservice'
+            type='text'
+            onChange={e => setLastName(e.target.value)}
+            value={lastName}
+          />
+        </div>
+      </div>
+
+      <div className='row'>
+        <div className='six columns'>
+          <textarea
+            className='u-full-width complaint'
+            placeholder='Complaint'
             type='text'
             onChange={e => setLastName(e.target.value)}
             value={lastName}
