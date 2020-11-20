@@ -95,7 +95,7 @@ function orders(){
                 <div className="order-top-img">
                     <img className="img-fluid site-logo" src={Webicon} alt="order-logo" />
                 </div>
-                <h4 className="text-center py-4">Your active orders</h4>
+                <h3 className="text-center py-5">Your active orders</h3>
                 <Container fluid>
                     {/* itme one */}
                     <Card className="background-color mb-3">
@@ -136,7 +136,7 @@ function orders(){
                     {/* end */}
 
 
-                    <h4 className="text-center mt-5 mb-5">Your Previous orders</h4>
+                    <h3 className="text-center mt-5 mb-5">Your Previous orders</h3>
                     {/* itme one */}
                     <Card className="background-color mb-3">
                     <img className="img-fluid about-left ml-1 pt-2" src={About} alt="order-logo" />
@@ -150,8 +150,8 @@ function orders(){
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                         </Card.Text>
-                        <Button className="btn-success status-btn" href="#">Status</Button>
-                        <Button className="btn-danger cancel-btn" href="#">Cancel</Button>
+                        <Button className="btn-success completed-btn" href="#">completed</Button>
+                        <Button className="btn-danger review-btn" href="#">review</Button>
                     </Card.Body>
                     </Card>
                     {/* end */}
@@ -169,15 +169,15 @@ function orders(){
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                         </Card.Text>
-                        <Button className="btn-success status-btn" href="#">Status</Button>
-                        <Button className="btn-danger cancel-btn" href="#">Cancel</Button>
+                        <Button className="btn-success completed-btn" href="#">completed</Button>
+                        <Button className="btn-danger review-btn" href="#">review</Button>
                     </Card.Body>
                     </Card>
                     {/* end */}
 
 
                     {/* itme three */}
-                    <Card className="background-color last-card mb-5">
+                    <Card className="background-color last-card">
                     <img className="img-fluid about-left ml-1 pt-2" src={About} alt="order-logo" />
 
                     <Card.Body className="inner-media">
@@ -189,8 +189,8 @@ function orders(){
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                         </Card.Text>
-                        <Button className="btn-success status-btn" href="#">Status</Button>
-                        <Button className="btn-danger cancel-btn" href="#">Cancel</Button>
+                        <Button className="btn-success completed-btn" href="#">completed</Button>
+                        <Button className="btn-danger review-btn" href="#">review</Button>
                     </Card.Body>
                     </Card>
                     {/* end */}

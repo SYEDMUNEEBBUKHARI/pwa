@@ -1,12 +1,13 @@
 .orders-head{
     .last-card{
-        margin-bottom: 30px;
+        margin-bottom: 100px !important;
     }
 
     .background-color{
         background-color: whitesmoke;
+        border-radius: 11px;
         border: none;
-        height: 150px;
+        height: 130px;
     }
     .order-top-img{
         .site-logo{
@@ -15,13 +16,14 @@
         }
     }
 
-   h4{
+   h3{
        text-transform: uppercase;
        font-weight: bold;
+       letter-spacing: 1px;
    }
    .about-left{
-       height: 140px;
-       border-radius: 20px;
+       height: 120px;
+       border-radius: 14px;
        position: absolute;
        width: 30%;
    }
@@ -29,20 +31,21 @@
   .inner-media{
     position: relative;
     right: -97px;
-    top: -12px;
+    top: -6px;
     font-size: 12px;
     width: 75%;
 
 
     .main-top-text{
-        font-size: 17px;
+        font-size: 16px;
         font-weight: bold;
     }
     .bottom-text{
-        font-size: 12px;
+        font-size: 10px;
     }
     .description-media{
         margin-bottom: 9px;
+        font-size: 10px;
     }
 
     .date-orders{
@@ -61,7 +64,8 @@
       height: 20px;
       font-size: 12px;
       padding: 0px 12px;
-      border-radius: 3px;
+      border-radius: 2px;
+      text-transform: uppercase;
 
       &:focus{
           outline: none;
@@ -76,14 +80,47 @@
       height: 20px;
       font-size: 12px;
       padding: 0px 12px;
-      border-radius: 3px;
+      border-radius: 2px;
       margin: 0 10px;
+      text-transform: uppercase;
 
       &:focus{
         outline: none;
     }
   }
-    
+
+  .completed-btn{
+    background-color: #670c67;
+    color: white;
+    border: none;
+    height: 20px;
+    font-size: 12px;
+    padding: 0px 12px;
+    border-radius: 2px;
+    text-transform: uppercase;
+
+    &:focus{
+        outline: none;
+    }
+  }
+
+
+  .review-btn{
+    background-color: #ed1b24;
+    float: right;
+    color: white;
+    border: none;
+    height: 20px;
+    font-size: 12px;
+    padding: 0px 12px;
+    border-radius: 2px;
+    margin: 0 10px;
+    text-transform: uppercase;
+
+    &:focus{
+        outline: none;
+    }
+  }    
 }
 
 

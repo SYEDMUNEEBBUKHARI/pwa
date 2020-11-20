@@ -1,66 +1,63 @@
 .service-rating{
     background-color: rgb(233, 233, 233) ;
     margin-top:50px;
-}
-.star{
-    color:red;
-}
-.half-star{
-    color:red;
-    font-size: 14px;
-}
-.successful{
-    padding:20px 0px 20px 0px;
-.download-text{
-    font-size: 18px;
-    font-weight: bold;
-}
-.desribe{
-    width: 183px;
-    font-weight: 600;
-    font-size: 14px;
-    margin-bottom: -10px;
-}
 
-}
-.service-rating-image{
-  width:100%;
-  height:230px;
-    position:relative;
-    top:-30px;
-    border-radius: 15px;
-    display: block;
-    object-fit: cover;
-    box-shadow: 5px 5px 10px 2px #88888848;
-}
-.order-title{
-    font-size: 13px;
-    font-weight: 900;
-}
-.playstore{
-    margin: 0 5px;
-    font-size: 8px;
-    color: white;
-    font-weight: 700;
-    background-color: rgb(28, 23, 77);
-    border-radius: 5px;
-    padding:5px 20px 5px 20px;
-    border:none;
 
-    &:focus{
-        outline: none;
+
+    .successful{
+        padding:20px 0px 20px 0px;
+    .download-text{
+        font-size: 16px;
+        font-weight: bold;
     }
-}
-.appstore{
-    font-size: 8px;
-    color: white;
-    font-weight: 700;
-    background-color: rgb(28, 23, 77);
-    border-radius: 5px;
-    padding:5px 20px 5px 20px;
-    border:none;
-
-    &:focus{
-        outline: none;
+    .desribe{
+        width: 183px;
+        font-weight: 600;
+        font-size: 12px;
+        margin-bottom: -10px;
     }
+    
+    }
+
+    .btn-group{
+        margin: 20px 0;
+        .playstore{
+            margin: 0 5px;
+            font-size: 8px;
+            color: white;
+            font-weight: 700;
+            background-color: rgb(28, 23, 77);
+            border-radius: 5px;
+            padding:5px 20px 5px 20px;
+            border:none;
+        
+            &:focus{
+                outline: none;
+            }
+        }
+        .appstore{
+            font-size: 8px;
+            color: white;
+            font-weight: 700;
+            background-color: rgb(28, 23, 77);
+            border-radius: 5px;
+            padding:5px 20px 5px 20px;
+            border:none;
+        
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    .service-rating-image{
+        width:100%;
+        height:220px;
+          position:relative;
+          top:-30px;
+          border-radius: 15px;
+          display: block;
+          object-fit: cover;
+          box-shadow: 5px 5px 10px 2px #88888848;
+      }
 }
