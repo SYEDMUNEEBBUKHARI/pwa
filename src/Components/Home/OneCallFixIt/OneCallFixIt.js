@@ -14,15 +14,6 @@ import { FiLinkedin } from "react-icons/fi";
         } else if (selectedfirst === "B") {
         }
 
-        
-
-        
-
-
-
-
-
-
 
 
 
@@ -45,7 +36,7 @@ import { FiLinkedin } from "react-icons/fi";
                     </Col>
                     </Row>
 
-                        <h6 className="text-center pb-3">One Call Fix It All</h6>
+                        <h4 className="text-center pb-3 one-call">One Call Fix It All</h4>
 
                     <div className="services-selection text-center">
                         <div className="filters">
@@ -87,7 +78,7 @@ import { FiLinkedin } from "react-icons/fi";
                             </select>
                          </div>
 
-                         <h6 className="mt-4">All Rights Reserved Mr Mahir</h6>
+                         <h5 className="mt-5 last-heads">All Rights Reserved Mr Mahir</h5>
 
                     </div>
                     </Container>
