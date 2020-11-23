@@ -9,6 +9,7 @@ import Profile from "./Components/Profile/Profile";
 
 
 
+
 function App() {
  
   return (
@@ -20,10 +21,8 @@ function App() {
       <Route path="/orders" component={Orders} />
       <Route path="/profile" component={Profile} />
       <Route  component={Home} />
-
     </Switch>
     <NavigationBar />
-
   </BrowserRouter>
 
   </>);

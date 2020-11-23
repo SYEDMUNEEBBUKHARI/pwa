@@ -1,8 +1,8 @@
 import React from 'react'
-import Suggestedone from "../../Assets/images/suggested-services/Suggestedone.jpg";
+// import Suggestedone from "../../Assets/images/suggested-services/Suggestedone.jpg";
 import Suggestedtwo from "../../Assets/images/suggested-services/Suggestedtwo.jpg";
-import Carpentar from "../../Assets/images/Carpentar.png";
-import Ac from "../../Assets/images/ACService.png";
+// import Carpentar from "../../Assets/images/Carpentar.png";
+// import Ac from "../../Assets/images/ACService.png";
 
 import "./suggestedServices.scss";
 import {Container,Row} from'react-bootstrap';

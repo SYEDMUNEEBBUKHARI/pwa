@@ -359,56 +359,7 @@ ol,
 form {
   margin-bottom: 2.5rem; }
 
-.complaint{
-  resize: none;
-  height: 133px;
-}
-.site-logo{
-  display: block;
-  margin: 0 auto;
-}
-#example-modal-sizes-title-lg{
-  ol{
-    .go2067797667:hover, .go2067797667::before{
-      color: #ed1b24;
-    }
-    .go2478912419, .go767851704{
-      border-bottom: 4px solid #ed1b24;
-      // width: 25%;
-    }
 
-    .go2478912419{
-      span{
-        display: none !important;
-      }
-    }
-    
-    .go2478912419:hover, .go2478912419::before {
-      color: white;
-    }
-    .go767851704:before{
-      background-color: #ed1b24;
-      color: white !important;
-    }
-    .go2478912419:before{
-      background-color: #ed1b24;
-    }
-    li{
-      padding: 0 !important;
-    }
-  }
-  
-}
-
-
-
-input, textarea{
-  border: 1px solid black !important;
-
-  &:focus{
-    border: 1px solid black !important;
-  }
-}
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
