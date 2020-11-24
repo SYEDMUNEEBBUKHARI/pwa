@@ -15,7 +15,7 @@ function DownloadOurApp() {
                 <Col lg xs="6">
                 <div className="successful">
                     <p className="download-text">Download our<br /> mobile app</p>
-                    <p className="desribe">but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p className="desribe">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
                 <div className="btn-group">
                 <button className="playstore">Get it on<br /> Playstore</button>

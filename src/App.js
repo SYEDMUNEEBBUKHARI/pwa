@@ -9,7 +9,9 @@ import Profile from "./Components/Profile/Profile";
 
 
 
-function App(props) {
+
+
+function App() {
  
   return (
 
@@ -24,7 +26,10 @@ function App(props) {
         <Redirect to="/" />
     </Switch>
 
- </BrowserRouter>
+     
+    <NavigationBar />
+ 
+    </BrowserRouter>
 
 );
 }

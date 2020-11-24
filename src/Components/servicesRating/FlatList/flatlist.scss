@@ -1,0 +1,28 @@
+div.scrolldate {
+    overflow: auto;
+    white-space: nowrap;
+    color: rgb(218, 218, 218);
+
+  }
+
+  div.scrolldate{
+       a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 14px 2px 14px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 650;
+    
+
+  }
+}
+
+.active-date{
+    background-color: rgb(35, 31, 73);
+    padding:5px;
+    margin-right:10px;
+    border-radius: 5px;
+    
+}

@@ -5,6 +5,91 @@
     height: 100%;
 }
 
+.modal-header{
+   border: none !important;
+}
+
 .modal-dialog{
     margin: -2px !important;
+}
+
+.card-body{
+    padding: inherit !important;
+}
+
+.card{
+    border: none !important;
+}
+
+.booking-icon-top{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
+}
+
+.btns-group{
+    display: grid;
+
+
+    .btn-contained{
+        background-color: #844084;
+    border-color: #844084;
+    color: white;
+    margin-bottom: 10px;
+    }
+    .btn-primary {
+        background-color:#ed1313;
+        border-color:#ed1313;
+    }
+    .makeStyles-backButton-2 {
+        margin-right: 0 !important;
+    }
+}
+
+.makeStyles-instructions-3, .makeStyles-instructions-6, .makeStyles-instructions-9{
+    text-align: center;
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+.btn:hover {
+    color: white !important;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+.cross-btn{
+    border-radius: 50% !important;
+    width: 22%;
+    height: 65px;
+    display: block !important;
+    margin: 0 auto !important;
+    background-color: purple !important;
+    border: none !important;
+
+    &:focus{
+        outline: none !important;
+    }
+
+    svg{
+        font-size: 34px;
+        color: white !important;
+    }
+}
+
+.MuiStepIcon-root.MuiStepIcon-active {
+    color: #ed1313 !important;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 1px 2px;
+}
+
+.MuiStepIcon-root.MuiStepIcon-completed{
+    color: #ed1313 !important;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 1px 2px;
 }

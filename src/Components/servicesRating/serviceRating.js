@@ -13,28 +13,24 @@ props.popmodal();
    
 return(
     <div className="service-rating-component">
-
     <div>
-        <h5 className="text-center service-rating-title"><b>SERVICE RATING</b></h5>
+        <h3 className="text-center mt-5 pb-2 service-rating-title">SERVICE RATING</h3>
     </div>
     <div className="service-rating">
-
     <Container>
             <Row className="justify-content-md-center">
                 <Col lg xs="6">
                 <div className="successful">
                     <p><b  className="order-title">SUCCESSFULL ORDERS</b></p>
-                    
                         <span><RiStarSFill className="star" /></span>
                         <span><RiStarSFill className="star" /></span>
                         <span><RiStarSFill className="star" /></span>
                         <span><RiStarSFill className="star" /></span>
                         <span><RiStarHalfFill className="half-star" /></span>
-
-                    <h5><b>4.7/5</b></h5 >
-                   based on 195 Tags
+                    <h4 className="mt-2"><b>4.7/5</b></h4 >
+                    <span>based on 195 Ratings</span>
                 </div>
-                <button className="book" onClick={()=>openBookForm()}>Book Now</button>
+                <button className="booking-process" onClick={()=>openBookForm()}>Book Now</button>
                 </Col>
             
                 <Col lg xs="6">

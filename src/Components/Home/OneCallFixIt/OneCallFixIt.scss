@@ -1,8 +1,8 @@
 .one-call-head{
     background-color: #0c2340;
-    h6{
+    h4{
         font-weight: bold;
-        text-transform: uppercase;
+        text-transform: capitalize;
         color: white;
     }
 
@@ -26,19 +26,25 @@
 
     .services-selection{
         select{
+            font-size: 12px;
             width: 80%;
             background-color: #0c2340;
             color: white;
             border-top: none;
             border-right: none;
             border-left: none;
+            border-radius: 0;
 
             &:focus{
                 outline: none;
             }
         }
 
-        h6{
+        .last-heads{
+                margin-bottom: 70px;
+        }
+
+        h5{
             color: white;
             font-size: 12px;
         }

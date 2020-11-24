@@ -14,7 +14,7 @@ function TestimonialSlider() {
 
     return (
         <>
-            <Container>
+            <Container fluid>
             <div className="testimonial-head pt-5">
             <h3 className="text-center pb-3">Testimonial</h3>
             <Carousel >

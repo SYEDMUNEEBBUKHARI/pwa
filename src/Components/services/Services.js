@@ -112,7 +112,6 @@ function Services(props) {
 
 
     const openModel=()=>{
-      console.log("clicked");
     setModal(<BookModal flag={true} close={()=>{closeModal()}} />);
     }
 
