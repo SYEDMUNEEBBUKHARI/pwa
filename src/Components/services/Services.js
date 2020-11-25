@@ -180,28 +180,26 @@ function Services(props) {
     return(
         <>
               {pop}
+              <div className="services">
+                 <img className="site-logo" src={Logo} alt=" disappear"/>
+              </div>
+              <div className="container ">
+                  <div className="scrollmenu" id="scroll-nav">
 
-            <div className="services">
-            <img className="site-logo" src={Logo} alt=" disappear"/>
-            </div>
-            <div className="container ">
-              <div className="scrollmenu" id="scroll-nav">
-
-                  {
-                    servicesGroup.map((data,key) => (
-                      <a className={data.id==="cleaning"?"active-service":""}  onClick={(e)=>{serviceSelectionHandler(e)}}
-                        key={key} id={data.id}>
-                        {data.label}
-                      </a>
-                    ))
-                  }
-                </div>
-
+                      {
+                        servicesGroup.map((data,key) => (
+                          <a className={data.id==="cleaning"?"active-service":""}  onClick={(e)=>{serviceSelectionHandler(e)}}
+                            key={key} id={data.id}>
+                            {data.label}
+                          </a>
+                        ))
+                      }
+                    </div>
               </div> 
 
          {serviceComp}
          <ServiceRating  popmodal={()=>{openModel()}}/>
-        </>
+      </>
     );
 }
 

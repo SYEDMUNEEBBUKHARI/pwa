@@ -1,12 +1,12 @@
 
-div.scrolldate {
+div.scrolltime {
     overflow: auto;
     white-space: nowrap;
     color: rgb(218, 218, 218);
 
   }
 
-  div.scrolldate{
+  div.scrolltime{
        a {
     display: inline-block;
     color: rgb(255, 255, 255);
@@ -20,7 +20,7 @@ div.scrolldate {
   }
 }
 
-.active-date{
+.active-time{
     background-color: rgb(35, 31, 73);
     padding:5px;
     margin-right:10px;
