@@ -1,0 +1,45 @@
+//step four
+.main-partition{
+    display: block;
+    margin: 0 auto;
+
+    .check{
+            margin: 10px 0;
+            font-size: 35px;
+            border: 3px solid black;
+            padding: 10px 2px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            width: 21%;
+            height: 60px;
+        }
+
+        .appreciation{
+            font-weight: bold;
+        }
+
+        .text-left{
+            .not-bold{
+                font-size: 14px;
+            }
+        }
+
+        .right-division{
+            float: right;
+            .not-bold{
+                font-size: 14px;
+            }
+        }
+
+        .bold{
+            font-weight: bold;
+        }
+
+        .tracking-icon, .service-icon{
+            font-size: 40px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+}

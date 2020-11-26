@@ -6,7 +6,7 @@ import NavigationBar from "./Components/navbar/Navbar";
 import Home from "./Components/Home/Home";
 import Orders from "./Components/orders/Orders";
 import Profile from "./Components/Profile/Profile";
-
+import OrderStatus from "./Components/servicesRating/Bookingmodal/OrderStatus";
 
 
 
@@ -23,7 +23,8 @@ function App() {
       <Route path="/services" component={Services} />
       <Route path="/orders" component={Orders} />
       <Route path="/profile" component={Profile} />
-        <Redirect to="/" />
+      <Route path="/orderstatus" component={OrderStatus} />
+      <Redirect to="/" />
     </Switch>
 
      

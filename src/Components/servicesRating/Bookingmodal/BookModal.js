@@ -10,7 +10,9 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Typography from '@material-ui/core/Typography';
 import DateAndTimeSelection from "./selectDataTime/SelectDateAndTime";
-
+import StepOne from "./StepOne";
+import StepThree from "./StepThree";
+import StepFour from "./StepFour";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,12 +36,16 @@ function getSteps() {
 function getStepContent(stepIndex) {
   switch (stepIndex) {
     case 0:
-      return 'SERVICES & COMPLAINT';     
+      return <StepOne />;     
     case 1:
 
       return <span><DateAndTimeSelection /></span>;
     case 2:
-      return 'CONTACT DETAIL';
+      return <StepThree />;     
+      ;
+      case 3:
+      return <StepFour />;     
+      ;
     default:
       return 'THANK YOU';
   }
@@ -66,7 +72,7 @@ function BookModal(props){
   };
 
   const handleReset = () => {
-    setActiveStep(0);
+    props.close();
   };
 
   
@@ -97,9 +103,10 @@ return(
         ))}
       </Stepper>
       <div>
-        {activeStep === steps.length ? (
+        {activeStep === 3 ? (
           <div>
             <Typography className={classes.instructions}>All steps completed</Typography>
+            <StepFour />
             <Button  className="cross-btn" onClick={handleReset}><CgClose /></Button>
           </div>
         ) : (
@@ -107,7 +114,7 @@ return(
             <div className={classes.instructions}>{getStepContent(activeStep)}</div>
             <div className="btns-group">
               <Button variant="contained" color="primary" onClick={handleNext}>
-                {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                {activeStep === steps.length  ? '' : 'Next'}
               </Button>
 
               <Button

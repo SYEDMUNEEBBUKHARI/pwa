@@ -12,7 +12,7 @@ function DateAndTimeSelection(){
                 <h5 className="text-center">CHOOSE DATE</h5>
                 
                  <FlatList   /> 
-                 <h5 className="text-center">CHOOSE Time</h5>
+                 <h5 className="text-center">CHOOSE TIME</h5>
                
                <ChooseTime />
       
