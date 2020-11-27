@@ -57,6 +57,7 @@ function FlatList(props){
       };
     return(
            <>
+           <h5 className="text-center">CHOOSE DATE</h5>
              <div className="container ">
                     <div className="scrolldate"  id="scroll-date" onScroll={onScroll}>
                             {

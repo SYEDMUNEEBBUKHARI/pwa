@@ -19,7 +19,7 @@ function ChooseTime(){
           // var time = moment() gives you current time. no format required.
           var time = moment(`${hour}:${min} ${dayornight}`,format),
             beforeTime = moment('10:45 PM', format),
-            afterTime = moment('08:30 AM', format);
+            afterTime = moment();
 
           if (time.isBetween(beforeTime, afterTime)) {
 
@@ -57,6 +57,7 @@ function ChooseTime(){
     }
 return(
     <>
+     <h5 className="text-center">CHOOSE TIME</h5>
     <div className="container ">
                     <div className="scrolltime"  id="scroll-time" onScroll={onScroll}>
                             {

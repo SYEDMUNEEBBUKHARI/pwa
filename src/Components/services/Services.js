@@ -186,7 +186,7 @@ function Services(props) {
               <div className="container ">
                   <div className="scrollmenu" id="scroll-nav">
 
-                      {
+                  {
                         servicesGroup.map((data,key) => (
                           <a className={data.id==="cleaning"?"active-service":""}  onClick={(e)=>{serviceSelectionHandler(e)}}
                             key={key} id={data.id}>
